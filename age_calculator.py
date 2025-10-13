@@ -12,6 +12,7 @@ birth_year = int(input('Enter your Birth Year: '))
 #Variable for current year input
 current_year = int(input('Enter Current Year: ' ))
 
+#Method to calculate age
 current_age = current_year - birth_year
 
 print(f'Hello {user_name}, you are {current_age} years old and enjoy {favorite_hobby}.')
