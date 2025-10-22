@@ -18,3 +18,6 @@ if number1 - number2 == answer:
 else:
    print("Your answer is wrong.")
    print(f"{number1} - {number2} should be {number1 - number2}.")
+
+
+

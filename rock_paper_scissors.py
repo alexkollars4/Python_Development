@@ -4,16 +4,16 @@ rock = 1
 scissors = 2
 paper = 3
 
-input = int(input("Enter 1 for Rock, 2 for Scissors, 3 for Paper: "))
+player = int(input("Enter 1 for Rock, 2 for Scissors, 3 for Paper: "))
 
-player = input
-computer = 1 
+
+computer = random.randint(1, 3)
 
 if player == computer:
-    print("It's a tie!")
-elif player == rock and computer == scissors:
-    print("You win! Rock crushes Scissors.")
-elif player == scissors and computer == paper:
-    print("You win! Scissors cut Paper.")
-elif player == paper and computer == 11:
-    print("You win! Paper covers Rock.")
+    print("It's a tie! Try again!")
+elif (player == rock and computer == scissors) or \
+     (player == scissors and computer == paper) or \
+     (player == paper and computer == rock):
+    print("You win!")
+else:
+    print("Computer wins!")
