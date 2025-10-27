@@ -14,3 +14,11 @@ for count in range(-2, 6):
 #So it prints only even numbers and stops at since 10 is not included.
 for count in range(0, 10, 2):  
     print(count)
+
+
+count = 0
+number = int(input("Enter a integer: "))
+
+for count in range(1,11):
+    
+    print(number, "x", count, "=", number * count)
